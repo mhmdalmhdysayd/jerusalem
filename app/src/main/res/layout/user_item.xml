@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_image_chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_face_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="username"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_chat"
+        app:layout_constraintTop_toTopOf="@+id/profile_image_chat" />
+
+    <TextView
+        android:id="@+id/last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="messsage"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_on"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="#05df29"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/last_message"
+        app:layout_constraintEnd_toStartOf="@+id/last_message"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_off"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="#bfbfbf"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/last_message"
+        app:layout_constraintEnd_toStartOf="@+id/last_message"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

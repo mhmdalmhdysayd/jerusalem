@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@+id/anamtinSlider"
+        android:layout_marginTop="8dp"
+        android:text="jerusalem"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+<!--
+    <TextView
+        android:id="@+id/slide_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_heading"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="212dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="WellCome to My App"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anamtinSlider"
+        android:layout_width="419dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        />
+
+<!--
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="130dp"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:src="@mipmap/ic_launcher" />
+    -->
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f5f9"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".Ui.RegisterActivity">
+<!--
+    <include
+        android:id="@+id/include"
+        layout="@layout/bar_layout" />
+        />
+-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backbtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="26dp"
+            android:paddingRight="24dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titletxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:text="New Account"
+                    android:textColor="#3c4b5d"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/desctxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:text="Start by entering your name and categorie below."
+                    android:textColor="#424242"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imageuser"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_add_circle_outline_black_24dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/userinfo_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/namell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circularbordersolid"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circularbordersolid"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/passwordll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circularbordersolid"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/tbn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/circularbluebordersolid"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:padding="16dp"
+                    android:text="Continue"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/verification_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/link_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/ALreadt_Member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:text="Already a member?"
+                    android:textColor="#3c4b5d"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/Login_Buttom_in_sing_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:text=" Login"
+                    android:textColor="#8e9cfe"
+                    android:textSize="16dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

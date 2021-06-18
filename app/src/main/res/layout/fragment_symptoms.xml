@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SymptomsFragment">
+
+
+    <VideoView
+        android:id="@+id/covVideo"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/less_symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Less Symptoms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covVideo" />
+
+    <ListView
+        android:id="@+id/less_symptoms_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/serious_symptoms_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/less_symptoms" />
+
+    <TextView
+        android:id="@+id/serious_symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serious Symptoms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/less_symptoms_list" />
+
+    <ListView
+        android:id="@+id/serious_symptoms_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serious_symptoms">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/most_symptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Symptoms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serious_symptoms_list" />
+
+    <ListView
+        android:id="@+id/most_symptoms_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/most_symptoms"></ListView>
+
+
+    <!--
+    <ImageButton
+        android:id="@+id/btn_serious"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toEndOf="@+id/serious_symptoms"
+        app:layout_constraintTop_toBottomOf="@+id/less_symptoms_list" />
+
+    <ImageButton
+        android:id="@+id/btn_less"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toEndOf="@+id/less_symptoms"
+        app:layout_constraintTop_toBottomOf="@+id/covVideo" />
+
+    <ImageButton
+        android:id="@+id/btn_most"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/most_symptoms"
+        app:layout_constraintTop_toBottomOf="@+id/serious_symptoms_list" />
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

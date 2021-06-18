@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.CountryCov19"
+    android:background="#FDF6F6">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageCountery"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/back_country"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+       android:paddingTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:id="@+id/nameCountery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Countery"
+        />
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/layoutTotal"
+        android:background="@drawable/total_cases_of_country"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageCountery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/imageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginStart="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@drawable/group_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/imageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/totalCountery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:text="541854"
+                android:textAlignment="center"
+                android:textColor="#FF8748"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deathsCountery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="18594"
+                android:textAlignment="center"
+                android:textColor="#FF4848"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/recoveredCountery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:text="15964"
+                android:textAlignment="center"
+                android:textColor="#36C12C"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/imageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="35dp"
+                android:text="Total"
+                android:textAlignment="center"
+                android:textColor="#838383"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Deaths"
+                android:textAlignment="center"
+                android:textColor="#838383"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:text="Recovered"
+                android:textAlignment="center"
+                android:textColor="#838383"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/circularbordersolid"
+      >
+
+        <com.google.android.gms.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            />
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
